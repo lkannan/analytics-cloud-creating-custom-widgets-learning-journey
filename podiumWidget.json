@@ -11,14 +11,14 @@
         {
             "kind": "main",
             "tag": "podium-widget",
-            "url": "/podiumWidget.js",
+            "url": "http://localhost:3000/podiumWidget.js",
             "integrity": "",
             "ignoreIntegrity": true
         },
         {
             "kind": "styling",
             "tag": "com-sap-sample-podium-styling",
-            "url": "/style-panel.js",
+            "url": "http://localhost:3000/style-panel.js",
             "integrity": "",
             "ignoreIntegrity": true
         }
@@ -39,6 +39,10 @@
         "bold_forNames": {
             "type":"string",
             "default": "400"
+        },
+        "font_color": {
+            "type": "string",
+            "default": "#000000"
         }
     },
     "methods": {

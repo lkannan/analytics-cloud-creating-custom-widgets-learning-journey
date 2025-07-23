@@ -1,0 +1,14 @@
+{
+  "name": "analytics-cloud-creating-custom-widgets-learning-journey",
+  "version": "1.0.0",
+  "description": "SAP Analytics Cloud custom widget with Express server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

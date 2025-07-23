@@ -107,6 +107,9 @@ class Podium extends HTMLElement {
 		if ("bold_forNames" in changedProperties) {
 			this._updatenamesBold(changedProperties["bold_forNames"]);
 		}
+		if ("font_color" in changedProperties) {
+			this._updateFontColor(changedProperties["font_color"]);
+		}
 		this.render();
 	}
 
@@ -155,6 +158,18 @@ class Podium extends HTMLElement {
 
 		});
 	}  
+
+	// method to update teh text color
+	_updateFontColor(color) {
+		const nameFields = this._shadowRoot.querySelectorAll('.name');
+		nameFields.forEach(name => {
+			name.style.color = color;
+		});
+		const valueFields = this._shadowRoot.querySelectorAll('.value');
+		valueFields.forEach(field => {
+			field.style.color = color;
+		});
+	}
 }
 
 customElements.define('podium-widget', Podium);
